@@ -1,11 +1,11 @@
-About pyads
-===========
+About pyads-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyads-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stlehmann/pyads
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyads-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python wrapper for TwinCAT ADS
 
