@@ -1,5 +1,5 @@
 {% set name = "pyads" %}
-{% set version = "3.4.0" %}
+{% set version = "3.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 23b5f8ba9d1b281585365d044b7ccbe19e6e3236abed45bcca315841246dddc3
+  sha256: 10f24089404e4ba04ba7d83d6e2041531f5f0391bef8cf9af32a641310511933
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   build:
     - make  # [linux]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
