@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - pyads  # [not win]
+    - pyads
 
 about:
   home: https://github.com/stlehmann/pyads
