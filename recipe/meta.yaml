@@ -28,7 +28,8 @@ requirements:
 
 test:
   imports:
-    - pyads
+    # we cannot import on Windows, because it tries to load the TinCAT dll directly.
+    - pyads  # [not win]
 
 about:
   home: https://github.com/stlehmann/pyads
