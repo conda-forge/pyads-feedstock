@@ -1,5 +1,5 @@
 {% set name = "pyads" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 462a809fe96da5bcd27136479e380ef8901550d6620d45e8164d9d36d4e7594b
+  sha256: badde435b1009e9d6a8b2f83a7e1ee80962d815807ac4452443616879b39a94c
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [py<36]
 
